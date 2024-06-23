@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 500px;
+    height: auto;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 20px;
+    background-color:rgb(243, 243, 243);
+}
+
+.comment{
+    display: contents;
+}
+
+.comment{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    h2{
+        justify-self: center;
+        grid-column: 2/3;
+        margin-top: 20px;
+    }
+
+    #username{
+        grid-row: 2/3;
+        grid-column: 1/4;
+        margin-left: 20px;
+        
+    }
+
+    #comment{
+        grid-row: 3/4;
+        grid-column: 1/4;
+        margin-left: 20px;
+    }
+
+    .button{
+        grid-row: 4/5;
+        grid-column: 1/2;
+        margin-top:0px ;
+        background-color: rgb(253, 248, 215);
+        border-radius: 10px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    #checkbox{
+        grid-row: 4/5;
+        grid-column: 2/3;
+        justify-self: left;
+        align-self:self-end;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        
+    }
+    img{
+        grid-column: 2/4;
+        grid-row: 2/4;
+        width: 80px;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+        margin-left: 60px;
+    }
+
+}
